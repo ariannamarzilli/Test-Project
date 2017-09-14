@@ -1,0 +1,14 @@
+#!/bin/bash
+
+read -p “Owner:” own
+read -p “Repository:” rep
+
+cd "`dirname "$0"`"
+
+python TestP.py $own $rep
+
+exit 
+
+
+
+
