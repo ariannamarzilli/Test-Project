@@ -1,6 +1,8 @@
 import sys
 import json
 import requests
+from requests.exceptions import ConnectionError
+
 
 args = sys.argv[1:]
 
