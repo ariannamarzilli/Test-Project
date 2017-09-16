@@ -41,7 +41,7 @@ try:
         print('Response http failed')
         print(comItem[u'message']) #message field of comItem contains type of error
 
-except ConnectionError as e:
+except ConnectionError:
 
     print ('Connection issue.')
 
