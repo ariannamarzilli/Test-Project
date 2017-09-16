@@ -1,7 +1,28 @@
 #!/bin/bash
+ 
+IFS=$'\n'
+echo -n ‘Owner: ‘
+read own
 
-read -p “Owner:” own
-read -p “Repository:” rep
+while [ -z $own ]
+do
+    echo Owner is empty. Please try again.
+    echo -n ‘Owner: ‘
+    read own
+done
+
+
+echo -n ‘Repository: ‘
+read rep
+
+while [ -z $rep ]
+do
+   echo Repository is empty. Please try again.
+   echo -n ‘Repository: ‘
+   read rep
+
+done
+
 
 cd "`dirname "$0"`"
 
